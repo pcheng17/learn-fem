@@ -170,7 +170,7 @@ if __name__ == "__main__":
     # First subplot - Solutions
     plt.subplot(1, 2, 1)
     plt.plot(nodes, solution, label='FEM Solution', color='blue', marker='o', markersize=3)
-    plt.plot(nodes, [exact_solution(xi) for xi in nodes], label='Exact Solution', color='red', linestyle='--')
+    plt.plot(nodes, [exact_solution(xi) for xi in nodes], label='Exact Solution', color='red', linestyle='-')
     plt.title('FEM Solution vs Exact Solution')
     plt.xlabel('x')
     plt.ylabel('u(x)')
